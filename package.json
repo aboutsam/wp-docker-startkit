@@ -1,0 +1,15 @@
+{
+  "name": "wp-docker-startkit",
+  "version": "1.0.0",
+  "description": "WP StartKit for running Wordpress in development using Docker",
+  "author": "Samantha Wanninger",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo 'run docker-compose up -d'",
+    "start:docker": "docker-compose up -d",
+    "down:docker": "docker-compose down"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
