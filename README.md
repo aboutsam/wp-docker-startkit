@@ -8,7 +8,7 @@ Try for your next Project.
 * Clone this repo
 * Run `npm run start:docker` or `docker-compose up -d`
 
-## Open WordPress on Browser
+## Print all Running Docker Container
 
 * Run `docker ps` to see all running docker contianer
 
@@ -19,6 +19,8 @@ Try for your next Project.
 
 * Open URL in Browser `https://0.0.0.0:9190`
 
+You can change the Port in your docker-compose.yml ports settings.
+
 ## Themes & plugins development
 
 This is a really simple environment for themes & plugins development. Nothing fancy. Please be aware that:
@@ -27,6 +29,13 @@ This is a really simple environment for themes & plugins development. Nothing fa
 * `wp_data` folder you'll find in this repo will be shared with the WordPress installation, put your code there.
 * `wp_logs` include all the logs from your Apache
 * `db_data` contains your MySQL Data
+
+## MariaDB or MySQL
+
+* Access the MySQL Container via `docker exec -it db_name bash` to log into container
+* or log directly to mysql via `docker exec -it db_name mysql -uroot -proot_pass`
+
+You can change the Passwort in your docker-compose.yml environment settings.
 
 ## Helpful Commands
 You can place the commands in the scripts area of your `package.json` in this repository.
