@@ -6,7 +6,8 @@ Try for your next Project.
 
 * Install docker from [https://www.docker.com/](https://www.docker.com/)
 * Clone this repo
-* Run `npm run start:docker` or `docker-compose up -d`
+* Run `npm run start:docker` or `docker-compose up -d` to start container
+* Run `docker-compose down` to shut down docker container
 
 ## Print all Running Docker Container
 
