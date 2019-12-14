@@ -2,6 +2,7 @@ version: '3'
 services:
   wordpress:
     image: wordpress:latest
+    container_name: wordpress_name
     depends_on:
       - db
     restart: always
@@ -16,6 +17,7 @@ services:
       WORDPRESS_DB_HOST: db:3306
   db:
     image: mariadb:latest
+    container_name: db_name
     restart: always
     volumes:
       - ./db_data:/var/lib/mysql
