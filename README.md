@@ -8,6 +8,17 @@ Try for your next Project.
 * Clone this repo
 * Run `npm run start:docker` or `docker-compose up -d`
 
+## Open WordPress on Browser
+
+* Run `docker ps` to see all running docker contianer
+
+| CONTAINER ID | IMAGE            | COMMAND                | CREATED         | STATUS         | PORTS                  | NAMES          |
+| -------------| -----------------|------------------------|-----------------|----------------|------------------------|----------------|
+| 3c9360a66bba | wordpress:latest | "docker-entrypoint.s…" | 20 seconds ago  | Up 18 seconds  | 0.0.0.0:9190->80/tcp   | wordpress_name |
+| a06bf2e574a2 | mariadb:latest   | "docker-entrypoint.s…" | 21 seconds ago  | Up 19 seconds  | 0.0.0.0:9306->3306/tcp | db_name        |
+
+* Open URL in Browser `https://0.0.0.0:9190`
+
 ## Themes & plugins development
 
 This is a really simple environment for themes & plugins development. Nothing fancy. Please be aware that:
